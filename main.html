@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./src/img/icons8-office-365-admin-144.png" alt="" />
+        <ul>
+          <li><a href="./main.html">Products</a></li>
+          <li><a href="./custumer.html">Custumers</a></li>
+          <li><a href="./orders.html">Orders</a></li>
+          <li><a href="./reports.html">Reports</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="section-1" class="section-1 section-1-close">
+      <h4 id="showevent">Add New Product</h4>
+      <form id="form">
+        <div>
+          <label for="">Name</label>
+          <input class="inputreset" required type="text" name="" id="name" />
+        </div>
+
+        <div>
+          <label for="">Product Number</label>
+          <input class="inputreset" type="text" name="" id="productNumber" />
+
+          >
+        </div>
+
+        <div>
+          <label for="">Color</label>
+          <input class="inputreset" type="text" name="" id="color" />
+        </div>
+
+        <div>
+          <label for="">Standart Cost</label>
+          <input class="inputreset" type="text" name="" id="" />
+        </div>
+
+        <div>
+          <label for="">List Price</label>
+          <input class="inputreset" type="text" name="" id="listPrice" />
+        </div>
+
+        <div>
+          <label for="">Size</label>
+          <input class="inputreset" type="text" name="" id="" />
+        </div>
+
+        <div>
+          <label for="">Weight</label>
+          <input class="inputreset" type="text" name="" id="" />
+        </div>
+
+        <div>
+          <label for="">Starts Date</label>
+          <input class="inputreset" type="datetime-local" name="" id="date" />
+        </div>
+
+        <button class="btnSave1" id="formBtn">Save</button>
+        <button class="btnSave2" id="formBtnSave">Save</button>
+        <button id="backToList" class="backto">Back To List</button>
+        <button id="cancel" class="cancel">Cancel</button>
+        <button id="deleteForomForm" class="delete">Delete</button>
+      </form>
+
+      <div class="msgConfirm" id="msgConfirm"></div>
+    </section>
+    <section id="section-2" class="section-2 section-2-close">
+      <div class="show-filter-conteiner">
+        <input placeholder="Search By Name" type="text" id="searchName" />
+        <input placeholder="Search By Color" type="text" id="searchColor" />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Product Number</th>
+            <th>Color</th>
+            <th>List Price</th>
+            <th>Modified Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="root"></tbody>
+      </table>
+      <button type="button" id="addNewProduct" class="newProduct">
+        Create New Product
+      </button>
+    </section>
+
+    <script src="./src/app.js"></script>
+  </body>
+</html>

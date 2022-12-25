@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif; }
+
+html {
+  max-height: 2000px; }
+
+body {
+  width: 100%;
+  height: 2000px;
+  background: #22c1c3;
+  background: linear-gradient(149deg, #22c1c3 0%, #87e6c8 22%, #e0f763 100%);
+  background-repeat: no-repeat; }
+  body header {
+    top: 10px;
+    position: relative;
+    width: 90%;
+    background-color: #fcfdfd;
+    left: 80px;
+    border-radius: 6px; }
+    body header nav {
+      position: relative;
+      height: 80px; }
+      body header nav img {
+        top: -5px;
+        position: absolute;
+        width: 150px;
+        height: 90px; }
+      body header nav ul {
+        display: flex; }
+        body header nav ul li {
+          position: relative;
+          top: 10px;
+          margin: 20px;
+          left: 250px; }
+          body header nav ul li a {
+            font-size: 20px;
+            color: #292827; }
+            body header nav ul li a:hover {
+              transition: 0.2s ease-in;
+              color: #ffe078; }
+  body .section-1 {
+    display: none;
+    top: 100px;
+    position: relative;
+    width: 600px;
+    height: 500px;
+    left: 550px;
+    border-radius: 6px;
+    background-color: #fcfdfd; }
+    body .section-1 h4 {
+      position: relative;
+      font-size: 21;
+      left: 200px;
+      top: 20px; }
+    body .section-1 form {
+      position: relative;
+      top: 20px;
+      width: 500px;
+      left: 50px;
+      height: 450px; }
+      body .section-1 form div {
+        top: 50px;
+        left: 50px;
+        position: relative;
+        margin: 4px;
+        display: flex; }
+        body .section-1 form div input {
+          position: absolute;
+          left: 200px; }
+        body .section-1 form div label {
+          position: relative;
+          margin: 3px; }
+    body .section-1 .btnSave1 {
+      position: absolute;
+      margin-top: 100px;
+      margin-left: 150px;
+      width: 80px;
+      background-color: forestgreen;
+      height: 30px;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer; }
+      body .section-1 .btnSave1 .btn {
+        padding: 5px 10px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 2px #999; }
+      body .section-1 .btnSave1:active {
+        box-shadow: 0 1px #666;
+        transform: translateY(4px); }
+    body .section-1 .btnSave2 {
+      position: absolute;
+      margin-top: 100px;
+      margin-left: 150px;
+      width: 80px;
+      background-color: forestgreen;
+      height: 30px;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer; }
+      body .section-1 .btnSave2 .btn {
+        padding: 5px 10px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 2px #999; }
+      body .section-1 .btnSave2:active {
+        box-shadow: 0 1px #666;
+        transform: translateY(4px); }
+    body .section-1 .backto {
+      position: absolute;
+      margin-top: 100px;
+      margin-left: 240px;
+      background-color: #444;
+      width: 100px;
+      height: 30px;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer; }
+      body .section-1 .backto .btn {
+        padding: 5px 10px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 2px #999; }
+      body .section-1 .backto:active {
+        box-shadow: 0 1px #666;
+        transform: translateY(4px); }
+    body .section-1 .delete {
+      position: absolute;
+      margin-top: 100px;
+      margin-left: 350px;
+      width: 100px;
+      height: 30px;
+      background-color: red;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer; }
+      body .section-1 .delete .btn {
+        padding: 5px 10px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 2px #999; }
+      body .section-1 .delete:active {
+        box-shadow: 0 1px #666;
+        transform: translateY(4px); }
+    body .section-1 .cancel {
+      position: absolute;
+      margin-top: 100px;
+      margin-left: 350px;
+      width: 100px;
+      height: 30px;
+      background-color: red;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer; }
+      body .section-1 .cancel .btn {
+        padding: 5px 10px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 2px #999; }
+      body .section-1 .cancel:active {
+        box-shadow: 0 1px #666;
+        transform: translateY(4px); }
+    body .section-1 .msgConfirm {
+      display: none;
+      position: relative;
+      top: -40px;
+      border-radius: 6px;
+      width: 600px;
+      background-color: #d8d7da;
+      height: 600px;
+      position: absolute; }
+      body .section-1 .msgConfirm h1 {
+        position: relative;
+        top: 10px;
+        left: 170px; }
+      body .section-1 .msgConfirm h3 {
+        position: relative;
+        top: 40px;
+        left: 50px; }
+      body .section-1 .msgConfirm p {
+        font-size: 20px;
+        position: relative;
+        left: 40px;
+        top: 50px; }
+      body .section-1 .msgConfirm .btl {
+        position: relative;
+        top: 150px;
+        left: 80px;
+        width: 150px;
+        height: 30px;
+        font-size: 20px;
+        background-color: #444;
+        color: white;
+        cursor: pointer; }
+        body .section-1 .msgConfirm .btl .btn {
+          padding: 5px 10px;
+          font-size: 18px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 2px #999; }
+        body .section-1 .msgConfirm .btl:active {
+          box-shadow: 0 1px #666;
+          transform: translateY(4px); }
+      body .section-1 .msgConfirm .dlt {
+        position: relative;
+        top: 150px;
+        left: 90px;
+        width: 120px;
+        height: 30px;
+        font-size: 20px;
+        background-color: red;
+        color: white;
+        cursor: pointer; }
+        body .section-1 .msgConfirm .dlt .btn {
+          padding: 5px 10px;
+          font-size: 18px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 2px #999; }
+        body .section-1 .msgConfirm .dlt:active {
+          box-shadow: 0 1px #666;
+          transform: translateY(4px); }
+  body .section-2 {
+    top: 100px;
+    position: relative;
+    width: 80%;
+    height: 1000px;
+    left: 150px;
+    border-radius: 8px;
+    background-color: #fcfdfd; }
+    body .section-2 table {
+      position: relative;
+      top: 50px;
+      left: 65px;
+      width: 90%;
+      border: 1px solid #b3adad;
+      border-collapse: collapse;
+      padding: 5px; }
+    body .section-2 table th {
+      position: relative;
+      border: 1px solid #b3adad;
+      padding: 5px;
+      background: #f0f0f0;
+      color: #313030; }
+    body .section-2 table td {
+      position: relative;
+      border: 1px solid #b3adad;
+      text-align: center;
+      padding: 5px;
+      background-color: transparent;
+      color: #313030; }
+      body .section-2 table td .update-product {
+        cursor: pointer;
+        width: 70px;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        background-color: #444; }
+        body .section-2 table td .update-product .btn {
+          padding: 5px 10px;
+          font-size: 18px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 2px #999; }
+        body .section-2 table td .update-product:active {
+          box-shadow: 0 1px #666;
+          transform: translateY(4px); }
+      body .section-2 table td .delete-product {
+        cursor: pointer;
+        width: 70px;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        background-color: red; }
+        body .section-2 table td .delete-product .btn {
+          padding: 5px 10px;
+          font-size: 18px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 2px #999; }
+        body .section-2 table td .delete-product:active {
+          box-shadow: 0 1px #666;
+          transform: translateY(4px); }
+    body .section-2 .show-filter-conteiner {
+      position: relative;
+      width: 600px;
+      height: 50px;
+      background-color: #444;
+      border-radius: 6px;
+      left: 300px;
+      top: 30px; }
+      body .section-2 .show-filter-conteiner input {
+        position: relative;
+        margin: 5px;
+        padding: 2px;
+        border-radius: 4px;
+        top: 6px;
+        left: 100px;
+        text-align: center;
+        font-size: 15px; }
+    body .section-2 .newProduct {
+      position: absolute;
+      margin-top: 50px;
+      font-size: 16px;
+      width: 200px;
+      height: 25px;
+      color: white;
+      background-color: #061409;
+      top: 8px;
+      left: 20px;
+      cursor: pointer; }
+      body .section-2 .newProduct .btn {
+        padding: 5px 10px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 2px #999; }
+      body .section-2 .newProduct:active {
+        box-shadow: 0 1px #666;
+        transform: translateY(4px); }
+    body .section-2 #show-filter {
+      position: relative;
+      font-size: 16px;
+      width: 120px;
+      height: 25px;
+      color: white;
+      background-color: #061409;
+      top: 50px;
+      left: 1200px;
+      cursor: pointer; }
+      body .section-2 #show-filter .btn {
+        padding: 5px 10px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 2px #999; }
+      body .section-2 #show-filter:active {
+        box-shadow: 0 1px #666;
+        transform: translateY(4px); }
